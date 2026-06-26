@@ -1,0 +1,58 @@
+
+· GITIGNORE
+# ============================================
+# PROJECT-SPECIFIC: B2B Cohort CLV Optimization
+# ============================================
+ 
+# Dataset mentah (besar / sumber data eksternal)
+online_retail_II.csv
+data/
+ 
+# === outputs/ : hasil olahan, sengaja TETAP di-push sebagai bukti hasil kerja ===
+# (tidak ada blanket ignore untuk outputs/*.csv atau outputs/*.png di sini)
+ 
+# Virtual environment — JANGAN PERNAH di-push
+venv/
+.venv/
+env/
+ENV/
+ 
+# Byte-compiled / cache Python
+__pycache__/
+*.py[codz]
+*$py.class
+ 
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+ 
+# Streamlit secrets (jika dashboard.py pakai streamlit)
+.streamlit/secrets.toml
+ 
+# Environment variables / kredensial database
+.env
+.envrc
+ 
+# MySQL Workbench export cache (jika ada)
+*.sql.bak
+ 
+# OS / Editor sampah
+.DS_Store
+Thumbs.db
+*.tmp
+tempCodeRunnerFile.py
+ 
+# VS Code (opsional — uncomment kalau tidak mau share config editor)
+# .vscode/
+ 
+# Log files
+*.log
+ 
+# Distribution / packaging (kalau pakai pip build)
+build/
+dist/
+*.egg-info/
+ 
+# Coverage / testing
+.pytest_cache/
+.coverage
+ 
